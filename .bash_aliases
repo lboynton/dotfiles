@@ -18,3 +18,6 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
     alias "$method"="lwp-request -m '$method'"
 done
+
+# Find non-ASCII characters
+alias find-non-ascii="grep --color='auto' -P -n '[\x80-\xFF]' -r --exclude-dir='.git' ."
