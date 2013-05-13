@@ -1,6 +1,6 @@
 [user]
-	name = Lee Boynton
-	email = lee@lboynton.com
+    name = Lee Boynton
+    email = lee@lboynton.com
 
 [alias]
     # View the SHA, description, and history graph of the latest 20 commits
@@ -52,7 +52,7 @@
     log = true
 
 [push]
-	default = simple
+    default = simple
 
 [help]
     autocorrect = 5
