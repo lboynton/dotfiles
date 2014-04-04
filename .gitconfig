@@ -29,7 +29,7 @@
     reb = "!r() { git rebase -i HEAD~$1; }; r"
     # Undo a `git push`
     undopush = push -f origin HEAD^:master
-	# Find branches containing commit
+    # Find branches containing commit
 	fb = "!f() { git branch -a --contains $1; }; f"
 	# Find tags containing commit
 	ft = "!f() { git describe --always --contains $1; }; f"
