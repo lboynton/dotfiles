@@ -1,0 +1,2 @@
+# show git branch in yellow if inside git repo
+export PS1='\u@\h:\w\e[0;33m$(__git_ps1)\e[m\$ '
