@@ -39,6 +39,8 @@
     fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
     # Remove branches that have already been merged with master
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    # Show list of 10 recently used branches
+    rb = !"git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
