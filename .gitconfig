@@ -40,7 +40,7 @@
     # Remove branches that have already been merged with master
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
     # Show list of 10 recently used branches
-    rb = !"git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
+    rb = !"git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
