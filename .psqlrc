@@ -5,3 +5,5 @@
 -- autocomplete keywords in uppercase
 \set COMP_KEYWORD_CASE upper
 
+-- Render large result sets better
+\x auto
