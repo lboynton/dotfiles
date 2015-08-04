@@ -1,0 +1,7 @@
+-- When showing null values, display NULL instead of blank, which is indistinguishable
+-- from an empty string in char fields
+\pset null 'NULL'
+
+-- autocomplete keywords in uppercase
+\set COMP_KEYWORD_CASE upper
+
