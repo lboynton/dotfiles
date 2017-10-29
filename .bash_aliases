@@ -6,6 +6,7 @@ alias .....="cd ../../../.."
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'eth0' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -21,3 +22,8 @@ done
 
 # Find non-ASCII characters
 alias find-non-ascii="grep --color='auto' -P -n '[\x80-\xFF]' -r --exclude-dir='.git' ."
+
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
