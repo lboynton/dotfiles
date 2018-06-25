@@ -27,3 +27,6 @@ alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# run phpstan through docker container
+alias phpstan='docker run -v $PWD:/app --rm phpstan/phpstan'
